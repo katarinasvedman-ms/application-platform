@@ -33,7 +33,7 @@ namespace Webapi.Controllers
             {
                 MyData[] returnData = this._dataContext.MyData.Take(10).ToArray();
 
-                this._logger.LogDebug("Found {0} entries", returnData.Length);
+                this._logger.LogDebug("Found {0} entries in database", returnData.Length);
                 return returnData;
             }
             catch (Exception ex)
